@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gate</title>
+        <script src="/jquery/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $("#open").click(function() {
+                    $.ajax({
+                        url: '/open',
+                        success: function(data) { console.log(data); }
+                    });
+                });
+                $("#close").click(function() {
+                    $.ajax({
+                        url: '/close',
+                        success: function(data) { console.log(data); }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="open" type="button">open</button>
+        <button id="close" type="button">close</button>
+    </body>
+</html>

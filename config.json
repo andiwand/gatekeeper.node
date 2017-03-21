@@ -1,0 +1,6 @@
+{
+	"port": 8080,
+	"gpio-open": 17,
+	"gpio-close": 18,
+	"pulse-length": 500
+}

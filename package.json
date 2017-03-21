@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "jquery": "^3.2.1",
+    "rpi-gpio": "git+https://github.com/andiwand/rpi-gpio.js.git"
   },
   "devDependencies": {},
   "scripts": {

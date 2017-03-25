@@ -13,9 +13,11 @@ if (!fs.lstatSync(config_file).isFile()) {
   process.exit(2);
 }
 
+console.log('config file: ' + config_file);
 var config = JSON.parse(fs.readFileSync(config_file, 'utf8'));
 console.log('name: ' + config.name);
 console.log('port: ' + config.port);
+// TODO: take path instead of boolean
 console.log('serve-content: ' + config['serve-content']);
 console.log('hardware: ' + config.hardware);
 console.log('gpio-open: ' + config['gpio-open']);

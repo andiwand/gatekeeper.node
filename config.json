@@ -1,5 +1,8 @@
 {
+    "name": "gatekeeper",
 	"port": 8080,
+	"serve-content": true,
+	"hardware": "virtual",
 	"gpio-open": 17,
 	"gpio-close": 18,
 	"pulse-length": 500

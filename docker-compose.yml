@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  gatekeeper.node:
+    build: .
+    image: andiwand/gatekeeper.node
+    container_name: gatekeeper.node
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - config:/config
+      - content:/public
+
+volumes:
+  config:
+  content:

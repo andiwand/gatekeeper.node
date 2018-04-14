@@ -1,0 +1,13 @@
+[Unit]
+Description=gatepeeker.node
+Documentation=https://github.com/andiwand/gatekeeper.node
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/node /opt/gatekeeper.node/app.js /opt/gatekeeper.node/config.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
